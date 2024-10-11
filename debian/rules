@@ -1,4 +1,11 @@
 #!/usr/bin/make -f
 
+export DH_GOLANG_EXCLUDES := cmd/
+export DH_GOLANG_INSTALL_EXTRA := fixtures/list-simple.txt fixtures/tests.txt
+
 %:
-	dh $@
+	dh $@ --builddirectory=_build --buildsystem=golang
+
+execute_after_dh_auto_configure:
+	sed -i -e 's#go-github/v[0-9]\+/github#go-github/github#' \
+	    _build/src/github.com/weppos/publicsuffix-go/publicsuffix/generator/gen.go
