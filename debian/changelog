@@ -1,5 +1,46 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-weppos-publicsuffix-go (0.30.1-1) unstable; urgency=medium
 
-  * Initial release
+  * Team upload.
+  * New upstream version 0.30.1
+  * Reorder fields in debian/control and debian/copyright
+  * Use dh-sequence-golang instead of dh-golang and --with=golang
+  * Bump versioned dependencies as per go.mod
+  * Bump Standards-Version to 4.6.2 (no change)
+  * Strip "/v50" from "github.com/google/go-github/v50/github"
+    (or any other future versions) from publicsuffix/generator/gen.go
+    in execute_after_dh_auto_configure target in debian/rules
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Anthony Fok <foka@debian.org>  Fri, 15 Mar 2024 11:46:34 -0600
+
+golang-github-weppos-publicsuffix-go (0.15.0-5) unstable; urgency=medium
+
+  * Updating maintainer info
+  * Updating Standards-Version
+  * Override lintian hints for test files
+
+ -- Peymaneh <peymaneh@posteo.net>  Mon, 28 Nov 2022 13:52:43 +0100
+
+golang-github-weppos-publicsuffix-go (0.15.0-4) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Apply multi-arch hints. + golang-github-weppos-publicsuffix-go-dev: Add Multi-Arch: foreign.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Sun, 27 Nov 2022 04:12:25 +0000
+
+golang-github-weppos-publicsuffix-go (0.15.0-3) unstable; urgency=medium
+
+  * Prepare source only upload for testing migration.
+
+ -- Peymaneh Nejad <p.nejad@posteo.de>  Tue, 24 Aug 2021 14:46:29 +0200
+
+golang-github-weppos-publicsuffix-go (0.15.0-2) unstable; urgency=medium
+
+  * d/control: Add dependencies
+
+ -- Peymaneh Nejad <p.nejad@posteo.de>  Sat, 10 Jul 2021 18:43:03 +0200
+
+golang-github-weppos-publicsuffix-go (0.15.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #989859)
+
+ -- Peymaneh Nejad <p.nejad@posteo.de>  Wed, 23 Jun 2021 19:06:07 +0530

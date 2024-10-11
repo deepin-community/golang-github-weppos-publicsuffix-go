@@ -1,0 +1,2 @@
+package-contains-documentation-outside-usr-share-doc [usr/share/gocode/src/github.com/weppos/publicsuffix-go/fixtures/list-simple.txt]
+package-contains-documentation-outside-usr-share-doc [usr/share/gocode/src/github.com/weppos/publicsuffix-go/fixtures/tests.txt]
